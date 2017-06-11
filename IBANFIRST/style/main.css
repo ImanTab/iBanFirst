@@ -1,0 +1,283 @@
+body {
+  background-color: rgba(242,243,252,1);
+}
+
+#trigger-overlay { /* Menu mobiles */
+  display: none !important;
+}
+
+.header-mobile {
+  display: none;
+}
+/********************************* Header *************************************/
+
+.header {
+	height: 64px;
+	width: 100%;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 10px 0 rgba(89,99,145,0.1);
+  margin-left: 12%;
+}
+
+/* Logo */
+#logo {
+  width: 130px;
+  margin-top: 17px;
+  margin-left: 12px;
+}
+
+/* Barre de recherche */
+.search {
+	height: 40px;
+	width: 100%;
+  border: none;
+	border-radius: 5px;
+	background-color: #F2F3FC;
+  margin-top: 12px;
+  padding-top: 3px;
+  padding-left: 18px;
+}
+
+/* "Recherche" dans la barre de "recherche" */
+.search::-webkit-input-placeholder {
+	height: 20px;
+	width: 69px;
+	color: rgba(89,99,145,0.6);
+	font-family: Calibri; /* Police provisoire */
+	font-size: 15px;
+	line-height: 20px;
+}
+
+#icones {
+  padding-top: 13px;
+  position: relative;
+  /*margin-left: 5%;*/
+}
+/* Petite cloche */
+#bell {
+	height: 24px;
+	width: 22.9px;
+  margin-left: 10%;
+  margin-top: 4%;
+}
+
+/* Petit cadenas */
+#lock {
+	height: 24px;
+	width: 20.45px;
+  margin-left: 16px;
+  margin-top: 4%;
+}
+
+/* Nom et statut utilisateur */
+#status {
+  float: right;
+  padding: 0;
+  color: #596391;
+  /*padding-top: 11px;*/
+  font-size: 14px;
+  font-family: Calibri;
+}
+
+/**************************** Chemin de navigation ****************************/
+
+ul.breadcrumb {
+    margin-left: 25%;
+    font-size: 14px;
+    padding-left: 0;
+    margin-top: 37px;
+    font-family: inherit;
+    background-color: transparent;
+    margin-bottom: 0;
+}
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: #222D5E;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover, .breadcrumb li:last-child {
+    font-weight: bold;
+}
+
+/**************************** Sections centrales ******************************/
+
+section[class^="section"] {
+  background-color: #FFFFFF;
+  width: 962px;
+  margin-left: 25%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.article div:nth-child(2) {
+  text-align: right;
+}
+
+.article span:first-child {
+  padding-top: 18px;
+  /*padding-left: 15px;*/
+  font-size: 18px;
+	color: #222D5E;
+	font-family: calibri;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 26px;
+}
+
+/*************** Premier bloc ***************/
+
+.section1 {
+	height: 84px;
+	border-radius: 3px;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 10px 0 rgba(93,95,186,0.1);
+  -webkit-animation: moving 3s;
+  animation: moving 2s;
+  animation-delay: 0s;
+}
+
+.iconelogo {
+  text-align: center;
+  padding-top: 26px;
+}
+
+#iconelogo {
+  height: 37px;
+  width: 32px;
+}
+
+.titre:not(#eur) {
+	color: #0F1843;
+	font-family: arial;
+	font-size: 18px;
+	line-height: 26px;
+  padding-top: 17px;
+  padding-left: 0;
+}
+
+#eur {
+	padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 11px;
+  font-weight: bold;
+	border: 1px solid #0F1843;
+	border-radius: 3px;
+}
+
+#ibanfirst, #solde2{
+  color: #596391;
+  font-family: calibri;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.soldes {
+  text-align: right;
+  font-size: 18px;
+	line-height: 26px;
+  padding-top: 17px;
+}
+
+#solde1 {
+  font-size: 18px;
+  font-family: calibri;
+  color: #44C78F;
+}
+
+/*************** Deuxième bloc ***************/
+
+.section2 {
+	height: 252px;
+	border-radius: 3px;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 10px 0 rgba(93,95,186,0.1);
+  padding-top: 18px;
+  opacity: 0;
+  -webkit-animation: moving 3s;
+  animation: moving 2s forwards;
+  animation-delay: 1s;
+}
+
+.section2  button {
+  height: 36px;
+	border: 1px solid #DEDFF0;
+	border-radius: 3px;
+	background-color: #F8F9FD;
+  color: #596391;
+	font-family: calibri;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+.section2 .filtrer {
+	width: 92px;
+  /*margin-left: 75%;*/
+}
+
+.filtrer span.square {
+	height: 18px;
+	width: 18px;
+	border-radius: 3px;
+	background-color: #DEDFF0;
+  float: right;
+  margin-right: 7px;
+}
+
+.exporter {
+	width: 77px;
+}
+
+/*************** Troisième bloc ***************/
+
+.section3 {
+	height: 580px;
+	border-radius: 3px;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 10px 0 rgba(93,95,186,0.1);
+  padding-top: 18px;
+  opacity: 0;
+  -webkit-animation: moving 3s;
+  animation: moving 2s forwards;
+  animation-delay: 2s;
+}
+
+.section3  button {
+  height: 36px;
+	border: 1px solid #DEDFF0;
+	border-radius: 3px;
+	background-color: #F8F9FD;
+  color: #596391;
+	font-family: calibri;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+.section3 .filtrer {
+	width: 92px;
+  /*margin-left: 71%;*/
+}
+
+@-webkit-keyframes moving {
+    from {top: 200px; opacity : 0}
+    to {top: 0px; opacity : 1}
+}
+
+@keyframes moving {
+    from {top: 200px; opacity : 0}
+    to {top: 0px; opacity : 1}
+}

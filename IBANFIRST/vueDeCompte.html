@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style/main.css" />
+    <link rel="stylesheet" type="text/css" href="style/responsive_screens.css" />
+    <link rel="stylesheet" type="text/css" href="style/small_displays.css" />
+    <link rel="stylesheet" type="text/css" href="style/dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="style/tables.css" />
+    <link rel="stylesheet" type="text/css" href="style/overlay.css" />
+    <script src="js/modernizr.custom.js"></script>
+    <title>iBanFirst - Vue de compte</title>
+    <link rel="icon" type="image/png" href="images/icon-ibanfirst.png" />
+  </head>
+
+  <body>
+    <header class="header">
+    <div class="col-xs-2"><img id="logo" src="images/logo-ibanfirst.png"/></div>
+    <div class="col-xs-6">
+      <input class="search" placeholder="Rechercher"/>
+    </div>
+    <div id="icones" class="col-xs-3 col-xs-offset-1">
+      <img id="bell" src="images/icon-notifications.png"/>
+      <img id="lock" src="images/icon-lock.png"/>
+      <div id="status">
+        <b id="user_name">Grégoire Segretain</b>
+        <br />
+        Unauthenticated
+      </div>
+    </div>
+
+  </header>
+
+  <header class="header-mobile">
+  <div class="col-xs-1"><img id="logo-mobile" src="images/icon-ibanfirst.png"/></div>
+  <div class="col-xs-7">
+    <input class="search" placeholder="Rechercher"/>
+  </div>
+  <div id="icones-mobile" class="col-xs-3 col-xs-offset-1">
+    <img id="bell-mobile" src="images/icon-notifications.png"/>
+    <img id="lock-mobile" src="images/icon-lock.png"/>
+    <div id="status-mobile">
+      <b id="user">Grégoire Segretain</b>
+      <br />
+      Unauthenticated
+    </div>
+  </div>
+</header>
+    <!-- Menu horizontal pour les petites résoltutions -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">ELECTROVISION <i class="glyphicon glyphicon-menu-right"></i></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">My accounts</a></li>
+          <li><a href="#">My cards</a></li>
+          <li><a href="#">FX market</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Menu overlay pour les smartphones -->
+    <button id="trigger-overlay" type="button"> ELECTROVISION
+      <i class="glyphicon glyphicon-menu-down"></i>
+    </button>
+    <div class="overlay overlay-scale">
+  			<button type="button" class="overlay-close">Close</button>
+  		<nav>
+			  <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">My accounts</a></li>
+          <li><a href="#">My cards</a></li>
+          <li><a href="#">FX market</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Settings</a></li>
+				</ul>
+  		</nav>
+  	</div>
+
+    <aside>
+      <div class="dropdown open keep-open"> <!-- Création du menu déroulant avec Bootstrap -->
+      <button class="dropdown-toggle" type="button" data-toggle="dropdown"> ELECTROVISION
+        <i class="glyphicon glyphicon-menu-down"></i>
+      </button>
+      <ul class="dropdown-menu">
+        <li><div class="square"></div><a href="#">Dashboard</a></li>
+        <li><div class="square"></div><a href="#">My accounts</a></li>
+        <li><div class="square"></div><a href="#">My cards</a></li>
+        <li><div class="square"></div><a href="#">FX market</a></li>
+        <li><div class="square"></div><a href="#">Team</a></li>
+        <li><div class="square"></div><a href="#">Services</a></li>
+        <li><div class="square"></div><a href="#">Settings</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <ul class="breadcrumb"> <!-- Chemin de navigation -->
+    <li><a href="#">Mes comptes</a></li>
+    <li><a href="#">Comptes EURO</a></li>
+  </ul>
+
+  <section class="section1"> <!-- Bloc 1 -->
+    <div class="">
+      <div class="iconelogo col-xs-1">
+        <img id="iconelogo" src="images/icon-ibanfirst.png"/>
+      </div>
+      <div class="titre col-xs-6">
+        ELECTROVISION <span id="eur">EUR</span>
+        <br />
+        <span id="ibanfirst">iBanFirst</span>
+      </div>
+      <div class="soldes col-xs-5">
+      <span class="count" id="solde1"></span><br />
+      <span id="solde2">- 1 289,02 €</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section2"> <!-- Bloc 2 -->
+    <div class="article">
+      <div class="col-xs-6">
+        <span>&Agrave; venir</span>
+      </div>
+      <div class="col-xs-6">
+        <button class="filtrer">Filtrer<span class="square"></span></button>
+        <button class="exporter">Exporter</button>
+      </div>
+    </div>
+
+    <article>
+    <div class="container">
+      <table class="table" id="tab1">
+        <thead> <!-- Entête tableau -->
+          <tr>
+            <th class="col_date">DATE</th>
+            <th class="col_nom">NOM</th>
+            <th></th>
+            <th class="col_montant">MONTANT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr> <!-- Ligne 1 -->
+            <td>20 Avr <span class="icon"><img src="images/icon-card.png" /></span></td>
+            <td>Montant immobilisé sur cartes virtuelles à usage unique</td>
+            <td><span class="square1"></span><span>Immo. cartes</span></td>
+            <td>4 559,48 €</td>
+          </tr>
+
+          <tr> <!-- Ligne 2 -->
+            <td>05 Avr <span class="icon"><img src="images/icon-operation.png" /></span></td>
+            <td>Virement à destination de FX4BIZ</td>
+            <td><span class="square2"></span><span>Change</span></td>
+            <td>- 9 489,47 €</td>
+          </tr>
+
+          <tr> <!-- Ligne 3 -->
+            <td>04 Avr <span class="icon"><img src="images/icon-operation.png" /></span></td>
+            <td>Achat de devises — 10 000,00 USD</td>
+            <td><span class="square3"></span><span>Change</span></td>
+            <td>- 9 489,47 €</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </article>
+  </section>
+
+  <section class="section3"> <!-- Bloc 3 -->
+    <div class="article">
+      <div class="col-xs-6">
+        <span>Transactions</span>
+      </div>
+      <div class="col-xs-6">
+        <button class="filtrer">Filtrer<span class="square"></span></button>
+        <button class="exporter">Exporter</button>
+      </div>
+    </div>
+
+    <article>
+    <div class="container">
+      <table class="table" id="tab2">
+        <thead> <!-- Entête tableau 2 -->
+          <tr>
+            <th class="col_date">DATE</th>
+            <th class="col_nom">NOM</th>
+            <th></th>
+            <th class="col_montant">MONTANT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr> <!-- Ligne 1 -->
+            <td>18 Avr <span class="icon"><img src="images/icon-card.png" /></span></td>
+            <td>Achat de devises — 2 000,00 USD</td>
+            <td></td>
+            <td>- 1 897,71 €</td>
+          </tr>
+
+          <tr> <!-- Ligne 2 -->
+            <td>07 Avr <span class="icon"><img src="images/icon-operation.png" /></span></td>
+            <td>Achat de devises — 10 000,00 USD</td>
+            <td><span class="square3"></span></td>
+            <td>- 9 489,47 €</td>
+          </tr>
+
+          <tr> <!-- Ligne 3 -->
+            <td>07 Avr <span class="icon"><img src="images/icon-operation.png" /></span></td>
+            <td>Achat de devises — 10 000,00 USD</td>
+            <td><span class="square3"></span></td>
+            <td>- 9 490,39 €</td>
+          </tr>
+
+          <tr> <!-- Ligne 4 -->
+            <td>05 Avr <span class="icon"><img src="images/icon-card.png" /></span></td>
+            <td>Virement reçu de Kima Ventures</td>
+            <td><span class="square2"></span></td>
+            <td>25 000 000,00 €</td>
+          </tr>
+
+          <tr> <!-- Ligne 5 -->
+            <td>05 Avr <span class="icon"><img src="images/icon-virtual-card.png" /></span></td>
+            <td>Surcoût pour change inférieur au seuil de gratuité</td>
+            <td></td>
+            <td>20,00 €</td>
+          </tr>
+
+          <tr> <!-- Ligne 6 -->
+            <td>05 Avr <span class="icon"><img src="images/icon-operation.png" /></span></td>
+            <td>Achat de devises — 522,00 USD</td>
+            <td><span class="square3"></td>
+            <td>- 494,08 €</td>
+          </tr>
+
+          <tr> <!-- Ligne 7 -->
+            <td>05 Avr <span class="icon"><img src="images/icon-operation.png" /></span></td>
+            <td>Achat de devises — 522,00 USD</td>
+            <td><span class="square3"></span></td>
+            <td>- 494,08 €</td>
+          </tr>
+
+          <tr> <!-- Ligne 8 -->
+            <td>05 Avr <span class="icon"><img src="images/icon-sdd-operation.png" /></span></td>
+            <td>Achat de devises — 522,00 USD</td>
+            <td><span class="square3"></span></td>
+            <td>- 494,08 €</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </article>
+
+  </section>
+  <script type="text/javascript" src="js/dropdown.js"></script>
+  <script type="text/javascript" src="js/animateNumber.js"></script>
+  <script src="js/classie.js"></script>
+	<script src="js/demo1.js"></script>
+  </body>
+</html>

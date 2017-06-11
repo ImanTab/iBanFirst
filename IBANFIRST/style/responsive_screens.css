@@ -1,0 +1,350 @@
+/********************** 4K  Screens ***************************/
+
+@media only screen and (min-width : 2560px) {
+
+  .header {
+    height: 64px;
+    width: 75%;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 10px 0 rgba(89,99,145,0.1);
+    margin-left: 12.5%;
+  }
+
+  /*.search {
+    width: 54%;
+    margin-left: 1%;
+  }*/
+
+  #bell {
+    margin-left: 16%;
+  }
+
+  #status {
+    margin-right: 1%;
+  }
+
+  .navbar {
+    display: none !important;
+  }
+
+  #trigger-overlay {
+    display: none !important;
+  }
+
+  .dropdown {
+    display: block;
+    position: fixed;
+    margin-left: 16% !important;
+  }
+
+  ul.breadcrumb {
+      margin-left: 26%;
+  }
+
+  section[class^="section"] {
+    background-color: #FFFFFF;
+    width: 50%;
+    margin-left: 26%;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .section2 .filtrer {
+    width: 92px;
+  }
+
+  .section3 .filtrer {
+    width: 92px;
+  }
+}
+
+
+/********************** 27 inch iMac ***************************/
+
+@media only screen and (min-width : 2400px) {
+
+  .header {
+    height: 64px;
+    width: 75%;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 10px 0 rgba(89,99,145,0.1);
+    margin-left: 12.5%;
+  }
+
+  #bell {
+    margin-left: 55%;
+  }
+
+  #status {
+    margin-right: 1%;
+  }
+
+  .navbar {
+    display: none !important;
+  }
+
+  #trigger-overlay {
+    display: none !important;
+  }
+
+  .dropdown {
+    display: block;
+    position: fixed;
+    margin-left: 16% !important;
+  }
+
+  ul.breadcrumb {
+      margin-left: 26%;
+  }
+
+  section[class^="section"] {
+    background-color: #FFFFFF;
+    width: 50%;
+    margin-left: 26%;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .section2 .filtrer {
+    width: 92px;
+  }
+
+  .section3 .filtrer {
+    width: 92px;
+  }
+}
+
+/********************* (1920x1080) Full HD Display ***********************/
+@media  screen and (max-width: 1920px) {
+  .header {
+    height: 64px;
+    width: 75%;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 10px 0 rgba(89,99,145,0.1);
+    margin-left: 12.5%;
+  }
+
+  /*.search {
+    width: 54%;
+    margin-left: 1%;
+  }*/
+
+  #bell {
+    margin-left: 40%;
+  }
+
+  #status {
+    margin-right: 1%;
+  }
+
+  .navbar {
+    display: none !important;
+  }
+
+  #trigger-overlay {
+    display: none !important;
+  }
+
+  .dropdown {
+    display: block;
+    position: fixed;
+    margin-left: 14% !important;
+  }
+
+  ul.breadcrumb {
+      margin-left: 26%;
+  }
+
+  section[class^="section"] {
+    background-color: #FFFFFF;
+    width: 50%;
+    margin-left: 26%;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .section2 .filtrer {
+    width: 92px;
+  }
+
+  .section3 .filtrer {
+    width: 92px;
+  }
+}
+
+@media  screen and (max-width: 1840px) {
+
+  #bell {
+    margin-left: 35%;
+  }
+}
+
+/************************ (1680x1050) WSXGA+ Display ***********************/
+@media screen and (max-width: 1680px) {
+
+    .header {
+    	height: 64px;
+    	width: 80%;
+    	background-color: #FFFFFF;
+    	box-shadow: 0 2px 10px 0 rgba(89,99,145,0.1);
+      margin-left: 10%;
+    }
+
+    #bell {
+      margin-left: 35%;
+    }
+
+    .navbar {
+      display: none !important;
+    }
+
+    #trigger-overlay {
+      display: none !important;
+    }
+
+    .dropdown {
+      display: block;
+      position: fixed;
+      margin-left: 12% !important;
+    }
+
+    ul.breadcrumb {
+        margin-left: 26%;
+    }
+
+    section[class^="section"] {
+      background-color: #FFFFFF;
+      width: 55%;
+      margin-left: 26%;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .section2 .filtrer {
+      width: 92px;
+    }
+
+    .section3 .filtrer {
+      width: 92px;
+    }
+
+}
+
+
+/************************ (1600x900) HD+ Display *****************************/
+@media screen and (max-width: 1600px) {
+
+  .header {
+  	height: 64px;
+  	width: 90%;
+  	background-color: #FFFFFF;
+  	box-shadow: 0 2px 10px 0 rgba(89,99,145,0.1);
+    margin-left: 5%;
+  }
+
+  #bell {
+    margin-left: 13%;
+  }
+
+  .navbar {
+    display: none !important;
+  }
+
+  #trigger-overlay {
+    display: none !important;
+  }
+
+  .dropdown {
+    display: block;
+    position: fixed;
+    margin-left: 9% !important;
+  }
+
+  ul.breadcrumb {
+      margin-left: 23%;
+  }
+
+  section[class^="section"] {
+    background-color: #FFFFFF;
+    width: 59%;
+    margin-left: 23%;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .section2 .filtrer {
+    width: 92px;
+  }
+
+  .section3 .filtrer {
+    width: 92px;
+  }
+}
+
+/************************ (1440x900) WXGA+ Display ***************************/
+@media screen and (max-width: 1440px) {
+
+  .header {
+  	height: 64px;
+  	width: 90%;
+  	background-color: #FFFFFF;
+  	box-shadow: 0 2px 10px 0 rgba(89,99,145,0.1);
+    margin-left: 5%;
+  }
+
+  #bell {
+    margin-left: 35%;
+  }
+
+  .navbar {
+    display: none !important;
+  }
+
+  #trigger-overlay {
+    display: none !important;
+  }
+
+  .dropdown {
+    display: block;
+    position: fixed;
+    margin-left: 9% !important;
+  }
+
+  ul.breadcrumb {
+      margin-left: 23%;
+  }
+
+  section[class^="section"] {
+    background-color: #FFFFFF;
+    width: 59%;
+    margin-left: 23%;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .section2 .filtrer {
+    width: 92px;
+  }
+
+  .section3 .filtrer {
+    width: 92px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+  #bell {
+    margin-left: 35%;
+  }
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1440px) {
+  #bell {
+    margin-left: 15%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1080px) {
+  #bell {
+    margin-left: 11%;
+  }
+}
